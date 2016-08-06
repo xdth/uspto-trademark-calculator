@@ -19,8 +19,5 @@ if(isset($_GET['regdate'])){
 if (isset($_POST['submit'])) {
   $arg = array($_POST['year'],$_POST['month'],$_POST['day']);
   $imploded = implode('-',$arg);
-  //$main->regdate($imploded);
   header("Location: ./?regdate=".$imploded);
-  //echo var_dump($imploded);
 }
-  //echo (isset($_POST['submit'])) ? $main->regdate($_POST['year'],$_POST['month'],$_POST['day']) : null;
